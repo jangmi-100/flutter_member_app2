@@ -118,7 +118,13 @@ class _MainActivityState extends State<MainActivity> {
       );
     }
 
-  }
+    //입력필드 초기화
+    _useridController.clear();
+    _passwdController.clear();
+    _emailController.clear();
+    _nameController.clear();
+
+  }//insertmember
 
 
 
@@ -127,6 +133,6 @@ class _MainActivityState extends State<MainActivity> {
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('회원 조회 기능 구현중.....'))
     );
-  }
+  }//_listUsers
   
 } //_MainActivityState
